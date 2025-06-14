@@ -6,10 +6,14 @@
     <title>Document</title>
 </head>
 <body>
+      <a href="{{ route('home') }}">home</a>
+    <a href="{{ route('library') }}">library</a>
+    <a href="{{ route('song') }}">song</a>
+    <a href="{{ route('form') }}">form</a>
 <form action="{{ route('form.submit') }}" method="POST">
         @csrf
-        <label for="songs_name">Naam van de single:</label><br>
-        <input type="text" id="songs_name" name="songs_name" required><br><br>
+        <label for="song_name">Naam van de single:</label><br>
+        <input type="text" id="song_name" name="song_name" required><br><br>
 
         <label for="author">Naam van de artiest of band:</label><br>
         <input type="text" id="author" name="author" required><br><br>

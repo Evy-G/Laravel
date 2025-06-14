@@ -17,7 +17,7 @@ class FormController extends Controller
             'author' => 'required|string|min:6|max:32',
             'release_year' => 'required|integer',
         ]);
-        
+        Song::create($validatedData);
         return redirect()->route('form')->with('success', 'Form submitted successfully!');
     }
 

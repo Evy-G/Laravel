@@ -7,8 +7,10 @@
 </head>
 <body>
     <h1>songs</h1>
-    <a href="{{ route('home') }}">home</a>
+      <a href="{{ route('home') }}">home</a>
     <a href="{{ route('library') }}">library</a>
+    <a href="{{ route('song') }}">song</a>
+    <a href="{{ route('form') }}">form</a>
       
 </body>
 </html>

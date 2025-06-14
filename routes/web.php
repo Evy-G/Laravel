@@ -31,3 +31,15 @@ Route::get("/form", [
 Route::post("/form", [
     SongsController::class, 'store'
 ])->name('form.submit');
+
+Route::delete('/songs/{song}', [SongsController::class, 'delete'])->name('songs.delete');
+
+Route::get('/song/update/{id}', [
+    SongsController::class,
+    'showUpdateForm'
+])->name('songs.update');
+
+Route::put('/song/update/{id}', [
+    SongsController::class,
+    'update'
+])->name('update.song');
