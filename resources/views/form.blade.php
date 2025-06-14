@@ -8,8 +8,8 @@
 <body>
       <a href="{{ route('home') }}">home</a>
     <a href="{{ route('library') }}">library</a>
-    <a href="{{ route('song') }}">song</a>
-    <a href="{{ route('form') }}">form</a>
+    <a href="{{ route('song') }}">song</a> 
+    <a href="{{ route('form') }}">form</a> 
 <form action="{{ route('form.submit') }}" method="POST">
         @csrf
         <label for="song_name">Naam van de single:</label><br>
